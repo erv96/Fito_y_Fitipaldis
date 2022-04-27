@@ -1,0 +1,30 @@
+body{
+    background-color: gray;
+}
+
+p{
+    line-height: 12px;
+    
+}
+
+p:last-child::after{
+    content: "...";
+}
+
+div{
+    display: block;
+    background-color: white;
+    margin-bottom: 36px;
+    padding: 2px;
+}
+
+div::first-letter{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.par{
+    background-color: darkgray;
+}
+
