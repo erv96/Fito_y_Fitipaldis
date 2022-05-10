@@ -3,7 +3,7 @@ body{
 }
 
 p{
-    line-height: 12px;
+    margin-bottom: 12px;
     
 }
 
@@ -11,7 +11,7 @@ p:last-child::after{
     content: "...";
 }
 
-div{
+div.parrafo{
     display: block;
     background-color: white;
     margin-bottom: 36px;
@@ -24,7 +24,38 @@ div::first-letter{
     font-weight: bold;
 }
 
-div.par{
+div.parrafo:nth-child(2n){
     background-color: darkgray;
 }
+
+.contenido{
+    color:white;
+    text-shadow: 2px 2px #000000;
+    font-family:'Trebuchet MS';
+    background-image: url("fito-2012.jpg"); 
+    background-size:cover;
+    width: 30vw;
+    padding: 15px 25px;
+    margin:35vh auto; 
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    pointer-events:none;
+    transition: all 1s;
+    
+}
+
+#saludo:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 
